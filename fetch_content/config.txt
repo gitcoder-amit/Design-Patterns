@@ -1,0 +1,11 @@
+# Configuration File
+# This is a sample configuration file
+# Comments start with a hash symbol '#'
+
+database_host = localhost
+database_port = 5432
+database_name = mydb
+database_username = admin
+database_password = pswrd
+# database_password = password123
+database_host = 127.0.0.1
