@@ -1,0 +1,35 @@
+ A hindu spirituality app featuring curated songs and articles. Solely implemented the notification
+feature of all type - simple notification API, Email Notification using Rails Action Mailer & Push notification using Firebase.
+
+how to tell interviewer in detail
+
+
+Brief Introduction:
+
+"I worked on a Hindu spirituality app that features curated songs and articles. My primary responsibility was to implement the notification feature to enhance user engagement."
+
+
+2. Types of Notifications Implemented
+Simple Notification API:
+
+"I implemented simple notifications using a RESTful API. These notifications were primarily used to inform users about new articles, songs, and updates within the app."
+Steps Involved:
+Created an endpoint to trigger notifications.
+Designed the notification payload to include necessary information like title, message, and a URL to redirect users.
+Implemented a service to send these notifications to users based on their preferences and activity.
+Email Notification using Rails Action Mailer:
+
+"For email notifications, I utilized Rails Action Mailer to send emails to users regarding new content, upcoming events, and personalized spiritual tips."
+Steps Involved:
+Set up Action Mailer configurations in the Rails application.
+Created mailer views and templates for different types of emails.
+Integrated background jobs (using Sidekiq or similar) to handle the asynchronous sending of emails, ensuring timely delivery without affecting the app's performance.
+Ensured deliverability by configuring SMTP settings and handling email queues.
+Push Notification using Firebase:
+
+"To keep users informed in real-time, I implemented push notifications using Firebase Cloud Messaging (FCM)."
+Steps Involved:
+Set up Firebase Cloud Messaging for the app, including the necessary configurations in both the app (Android/iOS) and the server.
+Implemented backend logic to send push notifications using the Firebase API.
+Created user segments and topics within Firebase to send targeted notifications based on user behavior and preferences.
+Ensured secure handling of Firebase tokens and managed the lifecycle of push notifications.
