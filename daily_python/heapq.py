@@ -1,39 +1,39 @@
-heapq is a module in Python's standard library that provides an implementation of the heap queue algorithm, also known as the priority queue algorithm. Heaps are binary trees for which every parent node has a value less than or equal to any of its children. This makes them suitable for implementing priority queues where the smallest element is always at the root.
+# heapq is a module in Python's standard library that provides an implementation of the heap queue algorithm, also known as the priority queue algorithm. Heaps are binary trees for which every parent node has a value less than or equal to any of its children. This makes them suitable for implementing priority queues where the smallest element is always at the root.
 
-Key Features of heapq:
-Min-Heap by Default: The heapq module in Python implements a min-heap, meaning the smallest element is always the root of the heap.
-Efficient Operations: Insertion, deletion, and retrieval of the smallest element all have an average time complexity of 
-𝑂
-(
-log
-⁡
-𝑛
-)
-O(logn).
-Basic Operations:
-Creating a Heap:
+# Key Features of heapq:
+# Min-Heap by Default: The heapq module in Python implements a min-heap, meaning the smallest element is always the root of the heap.
+# Efficient Operations: Insertion, deletion, and retrieval of the smallest element all have an average time complexity of 
+# 𝑂
+# (
+# log
+# ⁡
+# 𝑛
+# )
+# O(logn).
+# Basic Operations:
+# Creating a Heap:
 
-Any list can be turned into a heap using heapq.heapify(). This function rearranges the elements to satisfy the heap property.
-Pushing Elements:
+# Any list can be turned into a heap using heapq.heapify(). This function rearranges the elements to satisfy the heap property.
+# Pushing Elements:
 
-Use heapq.heappush(heap, item) to add a new item to the heap, maintaining the heap property.
-Popping Elements:
+# Use heapq.heappush(heap, item) to add a new item to the heap, maintaining the heap property.
+# Popping Elements:
 
-Use heapq.heappop(heap) to remove and return the smallest item from the heap.
-Peek at the Smallest Element:
+# Use heapq.heappop(heap) to remove and return the smallest item from the heap.
+# Peek at the Smallest Element:
 
-The smallest item is always at heap[0] without removing it from the heap.
-Push and Pop:
+# The smallest item is always at heap[0] without removing it from the heap.
+# Push and Pop:
 
-heapq.heappushpop(heap, item) pushes the new item onto the heap and then pops the smallest item off.
-Pop and Push:
+# heapq.heappushpop(heap, item) pushes the new item onto the heap and then pops the smallest item off.
+# Pop and Push:
 
-heapq.heapreplace(heap, item) pops the smallest item and then pushes the new item onto the heap. This operation is more efficient than performing a heappop() followed by heappush().
-Finding N Largest or Smallest Elements:
+# heapq.heapreplace(heap, item) pops the smallest item and then pushes the new item onto the heap. This operation is more efficient than performing a heappop() followed by heappush().
+# Finding N Largest or Smallest Elements:
 
-heapq.nlargest(n, iterable) returns the n largest elements from the dataset.
-heapq.nsmallest(n, iterable) returns the n smallest elements.
-Examples:
+# heapq.nlargest(n, iterable) returns the n largest elements from the dataset.
+# heapq.nsmallest(n, iterable) returns the n smallest elements.
+# Examples:
 Let's look at some practical examples using the heapq module.
 
 python
