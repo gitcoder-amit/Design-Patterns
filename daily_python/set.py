@@ -33,61 +33,49 @@ set2 = {3, 4, 5}
 set3 = set1.union(set2)  # {1, 2, 3, 4, 5}
 # intersection(*others): Returns the intersection of the set and other sets.
 
-python
-Copy code
 set1 = {1, 2, 3}
 set2 = {2, 3, 4}
 set3 = set1.intersection(set2)  # {2, 3}
 difference(*others): Returns the difference of the set and other sets.
 
-python
-Copy code
 set1 = {1, 2, 3}
 set2 = {2, 3, 4}
 set3 = set1.difference(set2)  # {1}
 symmetric_difference(other): Returns the symmetric difference of the set and another set.
 
-python
-Copy code
+
 set1 = {1, 2, 3}
 set2 = {2, 3, 4}
 set3 = set1.symmetric_difference(set2)  # {1, 4}
 Subset and Superset
 issubset(other): Returns True if the set is a subset of another set.
 
-python
-Copy code
+
 set1 = {1, 2}
 set2 = {1, 2, 3}
 is_subset = set1.issubset(set2)  # True
 issuperset(other): Returns True if the set is a superset of another set.
 
-python
-Copy code
+
 set1 = {1, 2, 3}
 set2 = {1, 2}
 is_superset = set1.issuperset(set2)  # True
 isdisjoint(other): Returns True if the set has no elements in common with another set.
 
-python
-Copy code
 set1 = {1, 2}
 set2 = {3, 4}
 disjoint = set1.isdisjoint(set2)  # True
 Copying a Set
 copy(): Returns a shallow copy of the set.
-python
-Copy code
+
 set1 = {1, 2, 3}
 set2 = set1.copy()
 Length of a Set
 len(): Returns the number of elements in the set.
-python
-Copy code
+
 set_length = len(my_set)
 Membership Testing
 in: Tests if an element is in the set.
-python
-Copy code
+
 exists = 3 in my_set  # True or False
 These methods provide a comprehensive toolkit for managing sets and performing common set operations in Python.
