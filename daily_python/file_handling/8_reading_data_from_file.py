@@ -34,7 +34,15 @@ f.close()
 
 f = open('data.txt', mode='r')
 data = f.readlines()
-print(data)
+print(data)  # ['Amit is graduated from Nit Srinagar,\n', 'Which is situated in Srinagar, Jammu and Kashmir']
 for line in data:
     print(line, end="")
+f.close()
+
+
+f = open('data.txt', mode='r')
+# data = f.read()
+# print(list(f))  # list of all the line present in files ['Amit is graduated from Nit Srinagar,\n', 'Which is situated in Srinagar, Jammu and Kashmir']
+for line in f:
+    print(line) # it will print all the lines one by one of the file
 f.close()
