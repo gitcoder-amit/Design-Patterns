@@ -8,7 +8,11 @@
 
             mainly two methods are used for writing data in a file
             write()  --> file_object.write(data in string format)
-            writelines()
+            writelines()  --> this method is used to write a group of lines of strings into the file represented by a file object
+                              Group of strings are stored in list, tuple or set
+                              file_object.writelines(list/set/tuple)
+
+
 '''
 
 
@@ -16,4 +20,9 @@ f = open('data1.txt', mode='w')
 f.write("My name is \namit yadav")  # we can break the line using \n  write in start in file due to cursor at 0
 n = f.write("bye bye")   # this will write next to amit yadav also returns no of characters it is writing in file
 print(n)
+f.close()
+
+f = open('data1.txt', mode='w')
+lines_list = ['yogesh\n', 'ram\n', 'raj', 'amit']
+f.writelines(lines_list)
 f.close()
