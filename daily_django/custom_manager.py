@@ -1,5 +1,7 @@
 from django.db import models
 
+
+
 class RecipeManager(models.Manager):
     def get_queryset(self):
         return super().get_queryset().filter(is_deleted = False)
@@ -18,6 +20,7 @@ class Recipe(models.Model):
 # users/models.py
 from django.db import models
 from django.contrib.auth.models import BaseUserManager, AbstractBaseUser, AbstractUser
+
 
 class UserManager(BaseUserManager):
     def create_user(self, name, phone_number, email=None, password=None, **extra_fields):
