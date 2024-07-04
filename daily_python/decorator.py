@@ -15,6 +15,8 @@ def smart_divide(func):
 def divide(a, b):
     print(a/b)
 
+
+
 divide(2,5)
 
 divide(2,0)

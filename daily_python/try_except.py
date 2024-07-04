@@ -36,4 +36,4 @@ if x < 0:
 x = "hello"
 
 if not type(x) is int:
-  raise TypeError("Only integers are allowed")
+  raise TypeError("Only integers are allowed"
