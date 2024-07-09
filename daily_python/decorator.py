@@ -1,5 +1,33 @@
 # In Python, a decorator is a design pattern that allows you to modify the functionality of a function by wrapping it in another function.
 
+# Decorator is a function that takes another function as argument, modifies that function and returns a new function that is modified
+
+
+def decor_result(result_func):
+    def distinction(marks): 
+        for m in marks:
+            if m >= 75:
+                print("Distinction")
+        result_func(marks)
+        
+    return distinction
+
+
+@decor_result   # if we want to calculate distinction then include this line otherwise not include
+def result(marks):
+    for m in marks:
+        if m >= 33:
+            pass
+        else:
+            print("FAIL")
+            break
+    else:                           # this will execute in for completes its normal life
+        print("PASS")
+
+
+marks = [50, 40, 50, 89]
+result(marks)
+
 
 def smart_divide(func):
     def inner(a, b):
