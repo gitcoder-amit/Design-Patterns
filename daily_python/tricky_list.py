@@ -70,7 +70,7 @@ squared_positives = [x**2 for x in nums if x > 0]
 print(squared_positives)  # [1, 9, 25]
 
 # 7. Flattening a Nested List
-
+    
 def flatten(lst):
     flattened = []
     for item in lst:

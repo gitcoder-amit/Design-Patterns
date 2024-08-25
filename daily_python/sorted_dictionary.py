@@ -57,3 +57,4 @@ print(sorted_list)
 my_dict = {'a': [3, 2, 4], 'b': [3,1, 1], 'c': [3,4, 2]}
 sorted_dict_by_keys = sorted(my_dict.items() , key = lambda x : x[1][2])  # Sort by last value of values
 print(sorted_dict_by_keys)  # [('b', [3, 1, 1]), ('c', [3, 4, 2]), ('a', [3, 2, 4])]
+

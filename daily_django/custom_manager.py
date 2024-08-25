@@ -1,7 +1,5 @@
 from django.db import models
 
-
-
 class RecipeManager(models.Manager):
     def get_queryset(self):
         return super().get_queryset().filter(is_deleted = False)
@@ -68,3 +66,5 @@ class CustomUser(AbstractUser):
 
     def __str__(self):
         return str(self.id)
+
+

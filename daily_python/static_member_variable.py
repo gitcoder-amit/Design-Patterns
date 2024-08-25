@@ -9,7 +9,8 @@ class Item:
 
     def __init__(self):
         self.x = 10 # instance member varialbe
-        y = 4 # local variable
+        y = 4 # local variableset1.union(set2)  # {1, 2, 3, 4, 5}
+# intersection(*others): 
         print(y)
         Item.b = 6 # static member variable second way
 

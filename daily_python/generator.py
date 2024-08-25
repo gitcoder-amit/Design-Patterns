@@ -14,6 +14,23 @@
 # Produce n natural even numbers
 
 
+def keypad_combination(n):
+    if n == 0:
+        output = ['']
+        return output
+
+    small_number = n//10
+    last_digit = n % 10
+
+    smalloutput = keypad_combination(small_number)
+
+    opitoiF = get_option(last_dongo)
+    output = []
+    for i in smal_out:
+        for j iin out:
+            output.append(i+j)
+    return output
+
 # this function will return that number that we are writing next to yield but return is also used for return but the differnce is when we return value using return then with returning value control also ends and function ends but when we use yield with this value will be returns but function not ends , function just paused means this function will again execute from this point
 
 

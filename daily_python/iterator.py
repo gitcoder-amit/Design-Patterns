@@ -1,6 +1,8 @@
 '''
     iterables -> list, tuple, dict, set, string, range --> contains element, we can access elements one by one by applying for loop internally for loop uses iterator --> we can access these element using iterator
 
+    Iterators are methods that iterate collections like lists, tuples, etc. Using an iterator method, we can loop through an object and return its elements.
+    
     iterator --> It is an object. iterator object points to iterable type and in start points first element of iterable. With the help of iterator we can access all the elements of iterable one by one
 '''
 

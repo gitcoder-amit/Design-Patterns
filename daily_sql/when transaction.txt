@@ -1,0 +1,12 @@
+
+if we are doing some query in database it will always go into transaction or not?
+
+    No, not every database query automatically initiates a transaction.
+
+    Read-Only Queries (SELECT statements): These typically do not require a transaction unless you're doing something like a SELECT FOR UPDATE that locks rows or if you're in a database system that supports multi-version concurrency control (MVCC) where even reads can be part of a transaction.
+
+    Write Operations (INSERT, UPDATE, DELETE): These typically do start a transaction, even if one isn't explicitly defined. Most databases wrap these operations in a transaction to ensure atomicity (either the whole operation is successful, or it fails without partial changes).
+
+    Explicit Transactions: You can manually control transactions using BEGIN, COMMIT, and ROLLBACK statements, allowing you to group multiple queries into a single transaction.
+
+    So, while read operations generally don't initiate a transaction, write operations often do, either implicitly or explicitly.

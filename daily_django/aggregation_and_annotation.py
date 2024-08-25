@@ -12,6 +12,7 @@ users_with_contact_count = CustomUser.objects.annotate(
 )
 
 
+
 '''In this example, annotate adds a total_contacts field to each CustomUser object in the queryset, showing the count of related Contact objects.
 
 2. aggregate

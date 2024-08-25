@@ -13,3 +13,7 @@ class CustomMiddleware(self):
     def __call__(self, request):
         resp = self.get_response(request)
         return resp
+
+
+
+
