@@ -35,5 +35,9 @@ Student.update_grade(38)  # this will change for every object
 Student.check_age(34)
 s1.check_age(34)
 
-s1.get_data()
-s2.get_data()
+s1.get_data()  # 45
+s2.get_data()  # 38
+
+
+Instance variable overrides class variable: Once s1.grade = 45 was set, s1 stopped referring to the class variable.
+Class variable update does not affect instances with an overridden variable: Student.update_grade(38) updated the class-level grade, which is why s2 now has 38, but s1 retains 45.
